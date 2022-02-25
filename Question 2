@@ -1,0 +1,33 @@
+package selenium_programs;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Question2 {
+	public static void main(String[] args) {
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\mnitinku\\Downloads\\drivers\\chromedriver.exe");
+	
+	WebDriver driver = new ChromeDriver();
+	
+	driver.get("https://jt-dev.azurewebsites.net/#/SignIn");
+	//Validating the Dutch and Englist is present on web page by using find elements storing the value in respetive boolean variables
+	boolean IsDutchPresent =  driver.findElements(By.xpath("//div[contains(text(),'Dutch')]")).size() >0;
+	
+	if(IsDutchPresent)
+		System.out.print("Dutch is present on webpage");
+	
+	boolean IsEnglishPresent = driver.findElements(By.xpath("//div[contains(text(),'English')]")).size() >0;
+	
+	if(IsEnglishPresent)
+		System.out.print("English is present on webpage");
+	// Filling my email
+	
+	WebElement email = driver.findElement(By.id("email"));
+	email.sendKeys("rahulnm2304@gmail.com");
+	
+	
+	
+	}
+}
