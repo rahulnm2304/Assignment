@@ -1,0 +1,54 @@
+Frontend Test cases for Shopbridge
+_______________________________________________________________________________
+  TC1 Validate New Item attributes
+  Step1 Login to "Shopbridge” web page  > login should be successful
+  Step2 Validate new Item should have a name, description, and price       > attribute a name, description, and price should be present for Item
+  
+  TC2 Validate upload picture for Item
+  Step1 Login to "Shopbridge” web page  > login should be successful
+  Step2 Add new Item with Picture       > Item should be added to inventory with Picture uploaded
+  
+  TC3 Validate Item dont have picture
+  Step1 Login to "Shopbridge” web page  > login should be successful
+  Step2 Add new Item without Picture       > Item should be added to inventory without Picture 
+  
+  TC4 Adding Item to Inventory
+   Step1 Login to "Shopbridge” web page  > login should be successful
+   Step2 Add new Item to Inventory       > Validate Item is added in inventory
+   
+  TC5 Adding Multiple Items to Inventory
+   Step1 Login to "Shopbridge” web page  > login should be successful
+   Step2 Add new Multiple Items to Inventory       > Validate Item is added in inventory which were selected
+   
+  TC6 Removing Item from Inventory
+  Step1 Login to "Shopbridge” web page  > login should be successful
+  Step2 Add new Multiple Items to Inventory       > Validate Item is added in inventory which were selected
+  Step3 remove Items from Inventory     > Item should get removed and other items which were not removed should be present in inventory
+  
+  TC7 Clicking on Item from Inventory
+   Step1 Login to "Shopbridge” web page  > login should be successful
+   Step2 Add new Item to Inventory       > Validate Item is added in inventory
+   Step3 Click on Item                   > Validate after clicking on item the new page should display name, description, and price along with Picture of item if uploaded
+_________________________________________________________________________   
+Backend Test Cases for Shopbridge
+_________________________________________________________________________
+ TC1 Add new Item With API
+    Step1 Login to "Shopbridge” web page  > login should be successful
+    Step2 Add New Item via API            > Validate respective API call should be add new Item with attribute like name, description, and price
+    Step3 Validate Database               > Validate SQL database Item table should contain new entries for Item added with its attribute name, description, and price.
+ TC2 Remove New Item Wuth API
+    Step1 Login to "Shopbridge” web page  > login should be successful
+    Step2 Remove Item via API            > Validate respective API call should be delete Item with attribute like name, description, and price
+    Step3 Validate Database               > Validate SQL database Item table should not contain entries for Item added with its attribute name, description, and price.
+ ______________________________________________________________________
+ Automation Candidates
+ ______________________________________________________________________
+ All Test caese applicable from Frondend (7 TCs) 
+ All Test cases applicable from Backed   (2 Tcs)
+ ===============================================
+          Total Automation Candidates  (9 TCs)
+          100 % Coverage
+          
+    
+
+ 
